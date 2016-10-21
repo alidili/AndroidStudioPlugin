@@ -1,0 +1,37 @@
+<idea-plugin version="2">
+  <id>com.yang.dialog</id>
+  <name>Android Dialog</name>
+  <version>1.0</version>
+  <vendor email="mr.yang0229@foxmail.com" url="http://www.yangle.tech">YangLe</vendor>
+
+  <description><![CDATA[
+      Create a dialog.<br>
+    ]]></description>
+
+  <change-notes><![CDATA[
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="141.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="CreateDialog.CreateDialogAction" class="com.yang.dialog.CreateDialogAction" text="Android Dialog"
+            description="Create a dialog">
+      <add-to-group group-id="CodeMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt Q"/>
+    </action>
+  </actions>
+
+</idea-plugin>
